@@ -1,0 +1,226 @@
+/* Estilos generales */
+@font-face {
+    font-family: 'SamsungOne';
+    src: url('./assets/fonts/SamsungOne-400.ttf') format('truetype'),
+         url('./assets/fonts/SamsungOne-700.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SamsungSharpSans';
+    src: url('./assets/fonts/samsungsharpsans-medium.otf') format('truetype'),
+         url('./assets/fonts/samsungsharpsans-bold.otf') format('opentype');
+}
+
+body {
+    font-family: 'SamsungSharpSans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; 
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #000;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Espacio para el navbar fijo */
+section {
+    padding-top: 70px; /* Ajusta según el tamaño del navbar */
+}
+
+/* Estilos para las secciones */
+.busqueda,
+.llamadas,
+.fotos,
+.conversacion,
+.galaxy-buds,
+.conoce-galaxy {
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 1200px; /* Limita el ancho máximo para que no se extienda demasiado */
+    background-color: #f8f9fa; /* Color de fondo para las secciones */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Sombra para efecto visual */
+}
+
+/* Estilos específicos para cada sección */
+.busqueda h1,
+.llamada-titulo,
+.fotos h1,
+.conversacion h1,
+.galaxy-buds h1,
+.titulo-conoce {
+    font-family: 'SamsungOne', Arial, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.dispositivos {
+    font-family: 'SamsungSharpSans', Arial, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los vídeos */
+.busqueda video,
+.llamada-video,
+.fotos video,
+.conversacion video {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para las imágenes */
+.galaxy-buds img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Añade bordes redondeados a las imágenes */
+}
+
+/* Estilos para el botón */
+.boton-comprar {
+    padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
+    font-size: 1.2em; /* Aumenta el tamaño del texto del botón */
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Para centrar el botón */
+    margin: 0 auto;
+}
+
+.boton-comprar:hover {
+    background-color: #4c4e50;
+}
+
+.principal-container {
+    max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    padding: 30px; /* Añade espacio interno al contenedor */
+    background-color: #ffffff; /* Color de fondo para el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Sombra para efecto visual */
+}
+
+/* Estilos para el título dentro del contenedor principal */
+.principal-container .titulo-principal {
+    font-family: 'SamsungOne', Arial, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el párrafo dentro del contenedor principal */
+.principal-container p {
+    font-family: 'SamsungSharpSans', Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6; /* Mejora la legibilidad del párrafo */
+    color: #333333; /* Color de texto */
+}
+
+.busqueda video,
+.llamada-video,
+.fotos video,
+.conversacion video {
+    width: 75%; /* Ajusta el ancho del video al 75% del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+    display: block; /* Asegura que sea un bloque para aplicar el ancho correctamente */
+    margin: 0 auto; /* Centra horizontalmente */
+    max-width: 100%; /* Asegura que no se desborde en dispositivos pequeños */
+}
+
+footer {
+    text-align: center; /* Centra el texto dentro del footer */
+    padding: 20px 0; /* Añade espacio interno */
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color de texto */
+}
+
+.conoce-galaxy {
+    text-align: center; /* Centra el contenido del contenedor */
+    padding: 15px; /* Añade espacio interno */
+}
+
+/* Estilos para el título "Conoce Galaxy AI" */
+.conoce-galaxy .titulo-conoce {
+    font-family: 'SamsungOne', Arial, sans-serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el texto debajo del título */
+.conoce-galaxy .dispositivos {
+    font-family: 'SamsungSharpSans', Arial, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón */
+.boton-comprar {
+    padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
+    font-size: 1.2em; /* Aumenta el tamaño del texto del botón */
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Para centrar el botón */
+    margin: 0 auto 20px; /* Centra el botón horizontalmente con margen inferior */
+}
+
+.boton-comprar:hover {
+    background-color: #4c4e50;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .principal-container {
+        padding: 20px; /* Ajusta el padding para dispositivos móviles */
+    }
+
+    .principal-container .titulo-principal {
+        font-size: 2em; /* Reduce el tamaño del título en dispositivos móviles */
+    }
+
+    .principal-container p {
+        font-size: 1em; /* Reduce el tamaño del texto del párrafo en móviles */
+    }
+
+    /* Ajustes para el botón en dispositivos móviles */
+    .boton-comprar {
+        font-size: 1em; /* Reduce el tamaño del texto del botón en móviles */
+        padding: 12px 24px; /* Ajusta el padding del botón para móviles */
+    }
+}
